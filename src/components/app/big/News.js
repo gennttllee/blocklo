@@ -21,7 +21,7 @@ const News = () => {
             <section className='bg-gradient-to-r from-[#3744C2] to-[#724DDD] rounded-[2rem] mx-auto w-11/12 h-[450px] flex justify-center items-center text-white mb-10'>
                 <div>
                     <h1 className="text-center font-bold text-4xl lg:text-6xl capitalize mb-5">Subscribe to our  Newsletter</h1>
-                    <p className="w-3/4 text-center mx-auto text-xl">Keep up with our community and get the latest update and exclusive news delivered straight to your inbox</p>
+                    <p className="w-3/4 text-center mx-auto text-xl leading-normal">Keep up with our community and get the latest update and exclusive news delivered straight to your inbox</p>
                     <div className="w-3/4 md:w-2/4 mx-auto flex flex-col md:flex-row items-center gap-y-3 mt-10 relative">
                         <input className="bg-[#ffffff2f] h-[3rem] border-none pl-12 w-full md:w-3/4 rounded-lg focus:outline-0 capitalize" type='email' placeholder='your email' />
                         <FontAwesomeIcon className="absolute md:left-4 top-4 left-4" icon={faEnvelope} />

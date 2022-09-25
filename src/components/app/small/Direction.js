@@ -7,7 +7,7 @@ const Direction = ({ row, icon, y1, z1, l1, h1 }) => {
     if (row) {
         return (
             <>
-                <div className="hidden  lg:flex gap-10 items-center justify-center mx-auto my-[-1px] min-h-[20rem] max-h-[27rem] h-[22rem] ">
+                <div className="hidden  md:flex gap-10 items-center justify-center mx-auto my-[-1px] min-h-[20rem] max-h-[27rem] h-[22rem] ">
                     <Box icon={icon} h1={h1} l1={l1} />
                     <div className='bg-gradient-to-b from-[#2F79F9] to-[#3DAEFA] w-[1rem] h-full flex items-center'>
                         <FontAwesomeIcon className="text-[#3DAEFA] text-7xl ml-[-1rem]" icon={faCaretLeft} />
@@ -15,7 +15,7 @@ const Direction = ({ row, icon, y1, z1, l1, h1 }) => {
                     <SmallBox h1={y1} p1={z1} row={row} />
                 </div>
 
-                <div className=" flex lg:hidden gap-7 items-center mx-auto w-11/12 ">
+                <div className=" flex md:hidden gap-7 items-center mx-auto w-11/12 ">
                     <div className='bg-gradient-to-b from-[#2F79F9] to-[#3DAEFA] w-[1rem] h-[28rem] flex items-center '>
                         <FontAwesomeIcon className="text-[#3DAEFA] text-7xl mr-[-1rem]" icon={faCaretRight} />
                     </div>
@@ -29,7 +29,7 @@ const Direction = ({ row, icon, y1, z1, l1, h1 }) => {
     } else {
         return (
             <>
-                <div className="hidden  lg:flex gap-10 items-center justify-center mx-auto my-[-1px] min-h-[20rem] max-h-[27rem] h-[22rem]  ">
+                <div className="hidden  md:flex gap-10 items-center justify-center mx-auto my-[-1px] min-h-[20rem] max-h-[27rem] h-[22rem]  ">
                     <SmallBox h1={y1} p1={z1} row={row} />
                     <div className='bg-[#2a2a55] w-[1rem] h-full flex items-center'>
                         <FontAwesomeIcon className="text-[#2a2a55] text-7xl mr-[-1rem]" icon={faCaretRight} />
@@ -37,7 +37,7 @@ const Direction = ({ row, icon, y1, z1, l1, h1 }) => {
                     <Box icon={icon} h1={h1} l1={l1} />
                 </div>
 
-                <div className=" flex lg:hidden gap-7 items-center mx-auto  w-11/12">
+                <div className=" flex md:hidden gap-7 items-center mx-auto  w-11/12">
                     <div className='bg-[#2a2a55] w-[1rem] h-[28rem] flex items-center'>
                         <FontAwesomeIcon className="text-[#2a2a55] text-7xl mr-[-1rem]" icon={faCaretRight} />
                     </div>

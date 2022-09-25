@@ -4,19 +4,22 @@ import { faAngleDown, faBars } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import List from '../components/layout/List';
 
+const home=(data)=>{
+    document.getElementById(data).scrollIntoView({behavior : 'smooth'})
+}
 
 const Layout = ({ children }) => {
     return (
         <section>
-            <nav className="bg-[#16162D] h-16 md:h-24 w-full text-white">
+            <nav className="bg-[#16162D] sticky top-0 z-10 h-16 md:h-24 w-full text-white">
                 <div className="flex justify-between w-11/12 mx-auto h-full items-center">
                     <img className=' w-32 h-6 sm:w-52 sm:h-10' src={logo} alt='logo' />
-                    <ul className='hidden lg:flex items-center w-auto gap-10 text-lg'>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>RoadMap</li>
-                        <li>Token Info</li>
-                        <li>Team</li>
+                    <ul className='hidden cursor-pointer lg:flex items-center w-auto gap-10 text-lg'>
+                        <li onClick={()=>home('home')}>Home</li>
+                        <li onClick={()=> home('about')}>About</li>
+                        <li onClick={()=>home('token info')}>Token Info</li>
+                        <li onClick={()=> home('tree')}>RoadMap</li>
+                        <l onClick={()=> home('team')}>Team</l>
                         <li>Community <FontAwesomeIcon className='ml-1' icon={faAngleDown} /> </li>
                     </ul>
                     <button className='block lg:hidden text-lg'> <FontAwesomeIcon icon={faBars} /></button>

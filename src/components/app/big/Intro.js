@@ -4,9 +4,9 @@ import { faHourglass, faQrcode, faShieldHeart } from "@fortawesome/free-solid-sv
 
 const Intro = () => {
     return (
-        <section className="my-20">
+        <section id="roadMap" className="my-20">
             <h3 className="text-center font-bold text-transparent text-base sm:text-xl bg-clip-text bg-gradient-to-r from-[#2F79F9] to-[#3DAEFA]">INTRODUCING CLOUDAX</h3>
-            <p className=" text-center text-3xl md:text-5xl w-full lg:w-[872px] mx-auto font-bold mt-2"> <span className="block mb-1 md:mb-2">An Integrated Web3</span>
+            <p className=" text-center text-3xl md:text-5xl w-full lg:w-[872px] mx-auto font-bold mt-2"> <span className="block mb-1 md:mb-2 lg:mb-3">An Integrated Web3</span>
                 <span> Ecosystem For Billions of users</span> </p>
             <p className="text-left md:text-center w-11/12 md:w-full lg:w-[872px] mx-auto md:text-xl mt-4 md:leading-relaxed">Cloudax is a blockchain ecosystem with blockchain-intrinsic products and services with the goal of permeating the globe and driving blockchain adoption.</p>
             <div className="w-11/12 mx-auto my-10 flex p-5 flex-wrap justify-center gap-y-10">

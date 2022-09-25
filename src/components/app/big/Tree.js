@@ -4,7 +4,7 @@ import Direction from '../small/Direction';
 
 const Tree = () => {
     return (
-        <section className="bg-[#16162D] w-full text-white py-2 mt-[5rem]">
+        <section id='tree' className="bg-[#16162D] w-full text-white py-2 mt-[5rem]">
             <p className="sm:text-xl mt-[6rem] uppercase text-center">Building The Future of Cloudax</p>
             <h1 className="text-3xl md:text-6xl text-center text-transparent bg-clip-text bg-gradient-to-r from-[#2F79F9] to-[#3DAEFA] font-bold my-6">The Roadmap</h1>
             <p className="w-11/12 md:w-2/4 mx-auto text-center text-[#ffffffa6]">Cloudax is a rapidly expanding ecosystem designed to innovate with various value-added utilities to continuously drive the economic growth of the ecosystem.</p>
