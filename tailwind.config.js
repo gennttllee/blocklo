@@ -6,12 +6,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: { 'cover-pic': "url('/public/guerrillabuzz-crypto-pr-JlijbOtSWuw-unsplash 1.png')" },
+      backgroundImage: { 'cover-pic': "url('/src/images/guerrillabuzz-crypto-pr-JlijbOtSWuw-unsplash 1.png')" },
       keyframes: {
         maker: {
-          "0%": { backgroundImage: "url('/public/guerrillabuzz-crypto-pr-JlijbOtSWuw-unsplash 1.png')"},
-          "50%": { backgroundImage: "url('/public/Mask group.png')"},
-          "10%": { backgroundImage: "url('/public/guerrillabuzz-crypto-pr-JlijbOtSWuw-unsplash 1.png')"},
+          "0%": { backgroundImage: "url('/src/images/guerrillabuzz-crypto-pr-JlijbOtSWuw-unsplash 1.png')",  backgroundSize: "cover", backgroundPosition : "center"},
+          "50%": { backgroundImage: "url('/src/images/Mask group.png')", backgroundSize: "cover", backgroundPosition : "center"},
+          "10%": { backgroundImage: "url('/src/images/guerrillabuzz-crypto-pr-JlijbOtSWuw-unsplash 1.png')", backgroundSize: "cover", backgroundPosition : "center"},
         },
       },
       animation: {
