@@ -6,7 +6,7 @@ import Icons from '../small/icons'
 
 const Landing = () => {
     return (
-        <section id='home' className="bg-cover-pic bg-[#4D53DD] animate-makers bg-center bg-cover h-screen relative flex items-center justify-center">
+        <section id='home' className="bg-cover-pic bg-center bg-cover h-screen relative flex items-center justify-center">
             <div className='text-white w-full mt-[-10rem]' >
                 <FontAwesomeIcon className='block text-center w-full text-5xl md:text-6xl 2xl:text-7xl mb-4' icon={faCloud} />
                 <h1 className=' text-3xl md:text-5xl  lg:text-6xl font-bold mb-4 text-center'>
