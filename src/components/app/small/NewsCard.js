@@ -3,7 +3,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const NewsCard = ({ image, h1, p1 }) => {
     return (
-        <div className="w-[27rem] shrink-0">
+        <div className=" w-11/12 sm:w-[27rem] shrink-0">
             <img className="rounded-[1.5rem]  w-full h-[20rem]" src={image} alt='images' />
             <div className="flex justify-between items-start my-4">
                 <p className="text-2xl w-4/5 font-bold">{h1}</p>
