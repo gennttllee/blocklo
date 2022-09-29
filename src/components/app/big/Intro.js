@@ -1,6 +1,6 @@
 import Card from "../small/Card"
 import { faDropbox } from "@fortawesome/free-brands-svg-icons";
-import { faHourglass, faQrcode, faShieldHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHourglass, faQrcode, faShieldHeart, faPeopleArrows } from "@fortawesome/free-solid-svg-icons";
 
 const Intro = () => {
     return (
@@ -11,13 +11,8 @@ const Intro = () => {
             <p className="text-left md:text-center w-11/12 md:w-full lg:w-[872px] mx-auto md:text-xl mt-4 md:leading-relaxed">Cloudax is a blockchain ecosystem with blockchain-intrinsic products and services with the goal of permeating the globe and driving blockchain adoption.</p>
             <div className="w-11/12 mx-auto my-10 flex p-5 flex-wrap justify-center gap-y-10">
                 <Card
-                    icon={faDropbox}
+                    icon={faPeopleArrows}
                     h1='Community Governance'
-                    p1='Ecosystem Participants are empowered to govern and shape the future of the ecosystem through a DAO protocol.'
-                />
-                <Card
-                    icon={faHourglass}
-                    h1='Built To Last'
                     p1='Ecosystem Participants are empowered to govern and shape the future of the ecosystem through a DAO protocol.'
                 />
                 <Card

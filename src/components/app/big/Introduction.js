@@ -10,8 +10,8 @@ const Introduction = () => {
         <p className=" text-xl md:leading-relaxed lg:leading-loose mt-6">A BEP-20 utility and governance token that powers our rapidly expanding ecosystem. Cloudax token ($CLDX) would serve several purposes such as Payments and Access to our Launchpad, NFT Marketplace, Fees Payments, ecommerce shopping, in-game purchases, Network incentivization and so much more.</p>
         <div>
           <div className=' mt-10 w-fit flex flex-col md:flex-row gap-4 flex-wrap'>
-            <button className='h-[58px] md:h-[68px] text-base md:text-2xl w-[240px] text-[#2F79F9] rounded-lg bg-[white]'> <FontAwesomeIcon className='mr-2' icon={faCopy} />Join Presale</button>
-            <button className='border-2 border-white h-[58px] md:h-[68px] text-base md:text-2xl w:[193px] md:w-[240px] rounded-lg '>
+            <button className='transition-all h-[58px] md:h-[68px] text-base md:text-2xl w-[240px] text-[#2F79F9] rounded-lg bg-[white] hover:bg-transparent hover:text-[white] hover:border-2 hover:border-[white]'> <FontAwesomeIcon className='mr-2' icon={faCopy} />Join Presale</button>
+            <button className='transition-all border-2 border-white h-[58px] md:h-[68px] text-base md:text-2xl w:[193px] md:w-[240px] rounded-lg hover:bg-white hover:text-[#2F79F9] '>
               <FontAwesomeIcon className='mr-2' icon={faPaperPlane} />
               Whitepaper</button>
           </div>

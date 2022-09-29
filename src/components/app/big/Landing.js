@@ -13,10 +13,13 @@ const Landing = () => {
                     <span className='block mb-2 md:mb-4'>Integrated Web3</span>
                     <span className='block mb-2'>Ecosystem Built To Scale</span>
                 </h1>
-                <p className='text-[#ffffffd9] w-11/12 leading-relaxed sm:w-3/4 2xl:w-2/4 mx-auto font-normal text-lg md:text-2xl md:leading-loose lg:text-3xl break-all text-center sm:leading-loose xl:leading-relaxed'>Cloudax is a decentralized and scalable ecosystem built to power the next generation of innovative web3 products</p>
+                <p className='text-[#ffffffd9] w-11/12 leading-relaxed sm:w-3/4 2xl:w-2/4 mx-auto font-normal text-lg md:text-2xl md:leading-loose lg:text-3xl break-all text-center sm:leading-loose xl:leading-relaxed'> 
+                Cloudax is a decentralized and scalable ecosystem built to power 
+                <span className='sm:block'>the next generation of innovative web3 products</span>
+                </p>
                 <div className='mx-auto mt-10 w-fit flex flex-col md:flex-row gap-6'>
-                    <button className='h-[58px] md:h-[68px] text-base md:text-2xl w-[240px] rounded-lg bg-gradient-to-r from-[#2F79F9] to-[#3DAEFA]'> <FontAwesomeIcon className='mr-2' icon={faCopy} />Join Presale</button>
-                    <button className='border-2 border-white h-[58px] md:h-[68px] text-base md:text-2xl w:[193px] md:w-[240px] rounded-lg '>
+                    <button className='transition h-[48px] md:h-[58px] text-base md:text-2xl w-[240px] rounded-lg bg-gradient-to-r from-[#2F79F9] to-[#3DAEFA] hover:to-[#2F79F9] hover:from-[#3DAEFA] '> <FontAwesomeIcon className='mr-2' icon={faCopy} />Join Presale</button>
+                    <button className='transition border-2 border-white h-[48px] md:h-[58px] text-base md:text-2xl w:[193px] md:w-[240px] rounded-lg hover:bg-[#2F79F9] hover:border-none '>
                         <FontAwesomeIcon className='mr-2' icon={faPaperPlane} />
                         Whitepaper</button>
                 </div>
