@@ -20,7 +20,7 @@ const ChartSection = () => {
                 <div className=" w-full md:w-2/4">
                     <h3 className="text-3xl lg:text-5xl mb-5 font-bold">Tokenomics</h3>
                     <Tabs h1='$0.0025' p1='Public Sale Price' />
-                    <Tabs h1='5 Billion' p1='Total Supply' />
+                    <Tabs h1='10 Billion' p1='Total Supply' />
                     <Tabs h1='173 Million' p1='Initial Circulating Supply' />
                     <Tabs h1='$434,000' p1='Initial Market Cap' />
                 </div>
