@@ -28,12 +28,12 @@ const Layout = ({ children }) => {
             <nav id='nav' className={`transition-all ${show ? 'bg-[#16162d4f]' : 'bg-[#16162D]'} ${show ? 'absolute' : 'fixed'} top-0 z-10 h-16 md:h-24 w-full text-white`}>
                 <div className="flex justify-between w-11/12 mx-auto h-full items-center">
                     <img className=' w-32 h-6 sm:w-58 sm:h-9' src={logo} alt='logo' />
-                    <ul className='hidden cursor-pointer lg:flex items-center w-auto gap-10 text-lg mr-[5rem]'>
-                        <a href='#home' className='hover:text-[#2F79F9] active:text-[#2F79F9] focus:text-[#2F79F9]' >Home</a>
-                        <a href='#about' className='hover:text-[#2F79F9]' >About</a>
-                        <a href='#token info' className='hover:text-[#2F79F9]'>Token Info</a>
-                        <a href='tree' className='hover:text-[#2F79F9]'>RoadMap</a>
-                        <a href='/' className='hover:text-[#2F79F9]' >Team</a>
+                    <ul className='hidden cursor-pointer lg:flex items-center w-auto h-full gap-10 text-lg mr-[5rem]'>
+                        <a href='#home' className='h-full flex items-center hover:border-b-2 hover:border-[white]' >Home</a>
+                        <a href='#about' className='h-full flex items-center hover:border-b-2 hover:border-[white]' >About</a>
+                        <a href='#token info' className='h-full flex items-center hover:border-b-2 hover:border-[white]'>Token Info</a>
+                        <a href='#tree' className='h-full flex items-center hover:border-b-2 hover:border-[white]'>RoadMap</a>
+                        <a href='/' className='h-full flex items-center hover:border-b-2 hover:border-[white]' >Team</a>
                         <div onMouseEnter={() => setMenu(true)} className='relative transition-all'>
                             <li onClick={() => setMenu(!menu)} className=' hover:text-[#2F79F9]'>Community <FontAwesomeIcon className='ml-1' icon={menu ? faAngleDown : faAngleUp} /> </li>
                             {menu && <div onMouseLeave={() => setMenu(false)} className='py-2 absolute top-14 left-[-4rem] bg-[#16162D] w-[15rem]'>

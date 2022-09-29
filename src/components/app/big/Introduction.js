@@ -4,7 +4,7 @@ import { faPaperPlane, faCopy } from '@fortawesome/free-solid-svg-icons'
 
 const Introduction = () => {
   return (
-    <section id='about' className=" bg-gradient-to-r from-[#2F79F9] to-[#3DAEFA] rounded-[2.5rem] w-11/12 text-white p-12 mx-auto flex items-center flex-col-reverse md:flex-row justify-between my-24 gap-y-10">
+    <section id='token info' className=" bg-gradient-to-r from-[#2F79F9] to-[#3DAEFA] rounded-[2.5rem] w-11/12 text-white p-12 mx-auto flex items-center flex-col-reverse md:flex-row justify-between my-24 gap-y-10">
       <div className=" w-full md:pr-3 lg:w-[48%]">
         <h4 className="xl:text-6xl 2xl:text-7xl xl:leading-tight 2xl:leading-tight text-3xl sm:text-3xl md:text-4xl lg:text-5xl  font-bold md:leading-tight lg:leading-snug">Introduction to Cloudax Token</h4>
         <p className=" text-xl md:leading-relaxed lg:leading-loose mt-6">A BEP-20 utility and governance token that powers our rapidly expanding ecosystem. Cloudax token ($CLDX) would serve several purposes such as Payments and Access to our Launchpad, NFT Marketplace, Fees Payments, ecommerce shopping, in-game purchases, Network incentivization and so much more.</p>

@@ -7,7 +7,7 @@ import Charts from "../small/Charts";
 const ChartSection = () => {
     return (
         <>
-            <section id="token info" className="w-11/12 mx-auto my-20  flex flex-col-reverse md:flex-row justify-between items-center gap-y-5">
+            <section className="w-11/12 mx-auto my-20  flex flex-col-reverse md:flex-row justify-between items-center gap-y-5">
                 <div>
                     <h4 className="text-3xl md:text-4xl lg:text-5xl lg:leading-tight font-bold md:leading-tight" >How to get CLDX Token</h4>
                     <p className="md:text-xl sm:leading-normal md:leading-relaxed lg:leading-loose my-5">Cloudax (CLDX) is the native token of the Cloudax blockchain. It is used to interact with dApps, pay for fees, secure the network through staking, and provide a basic accounting unit on the Cloudax platform.</p>
