@@ -3,14 +3,29 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown, faBars, faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faTwitter, faDiscord, faTelegram, faMedium, faGithub } from '@fortawesome/free-brands-svg-icons';
 import List from '../components/layout/List';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 const Layout = ({ children }) => {
     const [menu, setMenu] = useState(false)
+    const [show, setShow] = useState(true)
+
+    const controlNavbar = () => {
+        if (window.scrollY > 500) {
+            setShow(false)
+        } else { setShow(true) }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', controlNavbar)
+        return () => {
+            window.removeEventListener('scroll', controlNavbar)
+        }
+    },[]);
+
     return (
         <section>
-            <nav className="transition-all bg-[#16162D] sticky top-0 z-10 h-16 md:h-24 w-full text-white">
+            <nav id='nav' className={`transition-all ${show ? 'bg-[#16162d4f]' : 'bg-[#16162D]'} ${show ? 'absolute' : 'fixed'} top-0 z-10 h-16 md:h-24 w-full text-white`}>
                 <div className="flex justify-between w-11/12 mx-auto h-full items-center">
                     <img className=' w-32 h-6 sm:w-52 sm:h-10' src={logo} alt='logo' />
                     <ul className='hidden cursor-pointer lg:flex items-center w-auto gap-10 text-lg'>
