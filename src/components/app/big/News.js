@@ -12,8 +12,8 @@ const News = () => {
                 <h3 className="text-4xl lg:text-6xl font-bold mb-3 sm:mb-5">Latest News</h3>
                 <p className="mb-6 md:mb-[3rem]">Explore The Cloudax Ecosystem, Learn & Discover Latest News.</p>
                 <div className="flex justify-between flex-wrap gap-y-10">
-                    <NewsCard h1='Introduction To Cloudax Ecosystem' p1='Cloudax is an integrated blockchain ecosystem that consists of 4 core products: A Crypto banking wallet, NFT Marketplace, Web3 Launchpad, and A decentralized exchange.' image={image1} />
-                    <NewsCard h1='Cloudax Presale –Guide to Participate' p1='Cloudax presale is here, and you are here indicating that you have decided to invest in your future by taking part in the CLDX token sale. ' image={image2} />
+                    <NewsCard h1='Introducing Cloudax: A fully Integrated Blockchain Ecosystem that Powers Innovative Web3 Products' p1='Cloudax is an integrated blockchain ecosystem that consists of 4 core products: A Crypto banking wallet, NFT Marketplace, Web3 Launchpad, and A decentralized exchange.' image={image1} />
+                    <NewsCard h1='Cloudax Presale –How to Participate' p1='Cloudax presale is here, and you are here indicating that you have decided to invest in your future by taking part in the CLDX token sale. ' image={image2} />
                     <NewsCard h1='Cloudax IDO' p1='To be announced soon. It would be the biggest token launch of the year' image={image} />
                 </div>
             </section>

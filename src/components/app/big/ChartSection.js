@@ -10,7 +10,7 @@ const ChartSection = () => {
             <section className="w-11/12 mx-auto my-20  flex flex-col-reverse md:flex-row justify-between items-center gap-y-5">
                 <div>
                     <h4 className="text-3xl md:text-4xl lg:text-5xl lg:leading-tight font-bold md:leading-tight" >How to get CLDX Token</h4>
-                    <p className="md:text-xl sm:leading-normal md:leading-relaxed lg:leading-loose my-5">Cloudax (CLDX) is the native token of the Cloudax blockchain. It is used to interact with dApps, pay for fees, secure the network through staking, and provide a basic accounting unit on the Cloudax platform.</p>
+                    <p className="md:text-xl sm:leading-normal md:leading-relaxed lg:leading-loose my-5">Cloudax (CLDX) is the native token of the Cloudax blockchain. There would be a private and public sale on cloudax launchpad. Additional IDO would be done on partner Launchpads. Private sale Participants would be randomly selected from our whitelist event held on our telegram. The public sale would be based on FCFS (First Come, First Serve). Our sale method focuses on fairness for the entire community.</p>
                     <a href="/" className="bg-clip-text text-transparent text-xl bg-gradient-to-r from-[#2F79F9] to-[#3DAEFA]">Learn more <FontAwesomeIcon className="text-[#2F79F9]" icon={faArrowRight} /> </a>
                 </div>
                 <img className="w-[60%] lg:w-[100%]" src={image} alt='btc' />
