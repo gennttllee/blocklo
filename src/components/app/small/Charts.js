@@ -2,11 +2,11 @@ import { Doughnut } from "react-chartjs-2";
 import 'chart.js/auto';
 
 const data = {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple'],
+    labels: ['Angel sale','Private sale', 'Public sale', 'Ecosystem', 'Treasury', 'Liquidity', 'Team', 'Advisors'],
     datasets: [{
-        label: 'users gained',
-        data: [4, 1, 3, 2, 5],
-        backgroundColor: ['#71CDFB', '#86C18A', '#FF5CBE', '#FFEFCA', '#FFCA58'],
+        label: 'Token Distribution',
+        data: [4.5, 8, 20, 19.5, 10, 11, 4],
+        backgroundColor: ['#F96666','#71CDFB','orange', '#86C18A', '#FF5CBE', '#FFEFCA', '#00FFD1', '#CBC3E3'],
         borderWidth: 5,
         borderColor: '#724DDD',
     }],
