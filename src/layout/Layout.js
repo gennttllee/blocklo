@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
     return (
         <section>
             <nav id='nav' className={`transition-all ${show ? 'bg-[#16162d4f]' : 'bg-[#16162D]'} ${show ? 'absolute' : 'fixed'} top-0 z-10 h-16 md:h-20 w-full text-white`}>
-                <div className="flex justify-between w-11/12 mx-auto h-full items-center">
+                <div className="flex justify-between w-11/12  mx-auto h-full items-center">
                     <img className=' w-32 h-6 sm:w-58 sm:h-9' src={logo} alt='logo' />
                     <ul className='hidden cursor-pointer lg:flex items-center w-auto h-full gap-10 text-lg mr-[5rem]'>
                         <a href='#home' className='h-full flex items-center hover:border-b-2 hover:border-[white]' >Home</a>
@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
                     </ul>
                     <button onClick={() => setSide(!side)} className='block lg:hidden text-lg'> <FontAwesomeIcon icon={side ? faXmark : faBars} /></button>
                 </div>
-                <div className={`w-full sm:hidden ${side ? 'h-fit' : 'h-0'} overflow-y-hidden transition-all ease-in-out  bg-[#16162D] `}>
+                {side &&  <div className={`w-full animate-mover relative lg:hidden overflow-y-hidden bg-[#16162D] `}>
                     <a onClick={() => setSide(false)} href='#home' className='h-full flex py-4 pl-8 items-center border-b border-[#ffffff37]' >Home</a>
                     <a onClick={() => setSide(false)} href='#about' className='h-full flex items-center py-4 pl-8 border-b border-[#ffffff3d]' >About</a>
                     <a onClick={() => setSide(false)} href='#token info' className='h-full flex items-center py-4 pl-8 border-b border-[#ffffff3d]'>Token Info</a>
@@ -70,7 +70,7 @@ const Layout = ({ children }) => {
                                     <FontAwesomeIcon icon={faGithub} /> Github</a>
                             </div>}
                         </div>
-                </div>
+                </div>}
             </nav>
 
             <main>
