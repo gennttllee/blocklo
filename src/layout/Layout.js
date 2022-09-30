@@ -1,6 +1,6 @@
 import logo from '../images/Cloudax_Light 2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDown, faBars, faAngleUp } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown, faBars, faAngleUp, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faTwitter, faDiscord, faTelegram, faMedium, faGithub } from '@fortawesome/free-brands-svg-icons';
 import List from '../components/layout/List';
 import { useState, useEffect } from 'react';
@@ -9,6 +9,7 @@ import { useState, useEffect } from 'react';
 const Layout = ({ children }) => {
     const [menu, setMenu] = useState(false)
     const [show, setShow] = useState(true)
+    const [side, setSide] = useState(false)
 
     const controlNavbar = () => {
         if (window.scrollY > 500) {
@@ -21,7 +22,7 @@ const Layout = ({ children }) => {
         return () => {
             window.removeEventListener('scroll', controlNavbar)
         }
-    },[]);
+    }, []);
 
     return (
         <section>
@@ -34,9 +35,9 @@ const Layout = ({ children }) => {
                         <a href='#token info' className='h-full flex items-center hover:border-b-2 hover:border-[white]'>Token Info</a>
                         <a href='#tree' className='h-full flex items-center hover:border-b-2 hover:border-[white]'>RoadMap</a>
                         <a href='/' className='h-full flex items-center hover:border-b-2 hover:border-[white]' >Team</a>
-                        <div onMouseEnter={() => setMenu(true)} className='relative transition-all'>
-                            <li onClick={() => setMenu(!menu)} className=' hover:text-[#2F79F9]'>Community <FontAwesomeIcon className='ml-1' icon={menu ? faAngleDown : faAngleUp} /> </li>
-                            {menu && <div onMouseLeave={() => setMenu(false)} className='py-2 absolute top-14 left-[-4rem] bg-[#16162D] w-[15rem]'>
+                        <div onMouseEnter={() => setMenu(true)} className='relative h-full transition-all'>
+                            <li onClick={() => setMenu(!menu)} className=' flex items-center h-full hover:text-[#2F79F9]'>Community <FontAwesomeIcon className='ml-1' icon={menu ? faAngleDown : faAngleUp} /> </li>
+                            {menu && <div onMouseLeave={() => setMenu(false)} className='py-2 absolute top-18 left-[-4rem] bg-[#16162D] w-[15rem]'>
                                 <a className=' py-3 px-5 flex items-center gap-3 hover:bg-[#ffffff14] hover:text-[#2F79F9]' target='blank' href='https://t.me/cloudaxofficial'>
                                     <FontAwesomeIcon icon={faTelegram} /> Telegram</a>
                                 <a className='py-3 px-5 flex items-center gap-3 hover:bg-[#ffffff14]  hover:text-[#2F79F9]' target='blank' href='https://twitter.com/CloudaxHQ'
@@ -48,7 +49,27 @@ const Layout = ({ children }) => {
                             </div>}
                         </div>
                     </ul>
-                    <button className='block lg:hidden text-lg'> <FontAwesomeIcon icon={faBars} /></button>
+                    <button onClick={() => setSide(!side)} className='block lg:hidden text-lg'> <FontAwesomeIcon icon={side ? faXmark : faBars} /></button>
+                </div>
+                <div className={`w-full sm:hidden ${side ? 'h-fit' : 'h-0'} overflow-y-hidden transition-all ease-in-out  bg-[#16162D] `}>
+                    <a onClick={() => setSide(false)} href='#home' className='h-full flex py-4 pl-8 items-center border-b border-[#ffffff37]' >Home</a>
+                    <a onClick={() => setSide(false)} href='#about' className='h-full flex items-center py-4 pl-8 border-b border-[#ffffff3d]' >About</a>
+                    <a onClick={() => setSide(false)} href='#token info' className='h-full flex items-center py-4 pl-8 border-b border-[#ffffff3d]'>Token Info</a>
+                    <a onClick={() => setSide(false)} href='#tree' className='h-full flex items-center py-4 pl-8 border-b border-[#ffffff3d]'>RoadMap</a>
+                    <a onClick={() => setSide(false)} href='/' className='h-full flex items-center py-4 pl-8 border-b border-[#ffffff3d]' >Team</a>
+                    <div  className=' py-4 pl-8  transition-all'>
+                            <button onClick={() => setMenu(!menu)} className=' flex items-center h-full'>Community <FontAwesomeIcon className='ml-1' icon={menu ? faAngleDown : faAngleUp} /> </button>
+                            {menu && <div className='py-2   bg-[#16162D] w-[15rem]'>
+                                <a className=' py-3 px-5 flex items-center gap-3 hover:bg-[#ffffff14] hover:text-[#2F79F9]' target='blank' href='https://t.me/cloudaxofficial'>
+                                    <FontAwesomeIcon icon={faTelegram} /> Telegram</a>
+                                <a className='py-3 px-5 flex items-center gap-3 hover:bg-[#ffffff14]  hover:text-[#2F79F9]' target='blank' href='https://twitter.com/CloudaxHQ'
+                                > <FontAwesomeIcon icon={faTwitter} /> Twitter</a>
+                                <a className='py-3 px-5 flex items-center gap-3 hover:bg-[#ffffff14]  hover:text-[#2F79F9]' target='blank' href='https://cloudax.medium.com/'>
+                                    <FontAwesomeIcon icon={faMedium} />Medium</a>
+                                <a className='py-3 px-5 flex items-center gap-3 hover:bg-[#ffffff14]  hover:text-[#2F79F9]' target='blank' href='/'>
+                                    <FontAwesomeIcon icon={faGithub} /> Github</a>
+                            </div>}
+                        </div>
                 </div>
             </nav>
 
