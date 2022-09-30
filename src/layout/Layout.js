@@ -51,25 +51,22 @@ const Layout = ({ children }) => {
                     </ul>
                     <button onClick={() => setSide(!side)} className='block lg:hidden text-lg'> <FontAwesomeIcon icon={side ? faXmark : faBars} /></button>
                 </div>
-                {side &&  <div className={`w-full animate-mover relative lg:hidden overflow-y-hidden bg-[#16162D] `}>
+                {side && <div className={`w-full animate-mover relative lg:hidden overflow-y-hidden bg-[#16162D] `}>
                     <a onClick={() => setSide(false)} href='#home' className='h-full flex py-4 pl-8 items-center border-b border-[#ffffff37]' >Home</a>
                     <a onClick={() => setSide(false)} href='#about' className='h-full flex items-center py-4 pl-8 border-b border-[#ffffff3d]' >About</a>
                     <a onClick={() => setSide(false)} href='#token info' className='h-full flex items-center py-4 pl-8 border-b border-[#ffffff3d]'>Token Info</a>
                     <a onClick={() => setSide(false)} href='#tree' className='h-full flex items-center py-4 pl-8 border-b border-[#ffffff3d]'>RoadMap</a>
                     <a onClick={() => setSide(false)} href='/' className='h-full flex items-center py-4 pl-8 border-b border-[#ffffff3d]' >Team</a>
-                    <div  className=' py-4 pl-8  transition-all'>
-                            <button onClick={() => setMenu(!menu)} className=' flex items-center h-full'>Community <FontAwesomeIcon className='ml-1' icon={menu ? faAngleDown : faAngleUp} /> </button>
-                            {menu && <div className='py-2   bg-[#16162D] w-[15rem]'>
-                                <a className=' py-3 px-5 flex items-center gap-3 hover:bg-[#ffffff14] hover:text-[#2F79F9]' target='blank' href='https://t.me/cloudaxofficial'>
-                                    <FontAwesomeIcon icon={faTelegram} /> Telegram</a>
-                                <a className='py-3 px-5 flex items-center gap-3 hover:bg-[#ffffff14]  hover:text-[#2F79F9]' target='blank' href='https://twitter.com/CloudaxHQ'
-                                > <FontAwesomeIcon icon={faTwitter} /> Twitter</a>
-                                <a className='py-3 px-5 flex items-center gap-3 hover:bg-[#ffffff14]  hover:text-[#2F79F9]' target='blank' href='https://cloudax.medium.com/'>
-                                    <FontAwesomeIcon icon={faMedium} />Medium</a>
-                                <a className='py-3 px-5 flex items-center gap-3 hover:bg-[#ffffff14]  hover:text-[#2F79F9]' target='blank' href='/'>
-                                    <FontAwesomeIcon icon={faGithub} /> Github</a>
-                            </div>}
-                        </div>
+                    <div className='py-4 flex gap-5 text-xl '>
+                        <a className=' ml-8' target='blank' href='https://t.me/cloudaxofficial'>
+                            <FontAwesomeIcon icon={faTelegram} /> </a>
+                        <a target='blank' href='https://twitter.com/CloudaxHQ'
+                        > <FontAwesomeIcon icon={faTwitter} /> </a>
+                        <a target='blank' href='https://cloudax.medium.com/'>
+                            <FontAwesomeIcon icon={faMedium} /></a>
+                        <a target='blank' href='/'>
+                            <FontAwesomeIcon icon={faGithub} /></a>
+                    </div>
                 </div>}
             </nav>
 
